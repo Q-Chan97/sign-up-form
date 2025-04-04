@@ -65,6 +65,21 @@ img {
     color: white;
 }
 
+.image-credit {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3rem;
+    font-family: manga-font, sans-serif;
+    font-size: 0.5rem;
+    color: white;
+    width: 100%;
+}
+
+.image-credit a:visited {
+    color: #BA6EBA;
+}
+
 .right-page-content {
     display: flex;
     flex-direction: column;
