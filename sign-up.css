@@ -143,7 +143,7 @@ form {
     margin: 0px 100px 10px 0px;
 }
 
-input {
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
     font-family: inherit;
     font-size: 100%;
     border: 1px solid #5b5b5b;
@@ -164,6 +164,20 @@ label {
 
 ::placeholder {
     font-size: 70%;
+}
+
+.message {
+    font-size: 0.9rem;
+    color: #5b5b5b;
+}
+
+.pswd-togglebox {
+    display: flex;
+    flex-direction: row;
+}
+
+.pswd-togglebox > input {
+    margin-right: 0.25rem;
 }
 
 button {

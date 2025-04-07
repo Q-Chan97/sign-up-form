@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Sign Up Form</title>
     <link rel="stylesheet" href="sign-up.css">
+    <script src="sign-up.js" defer></script>
 </head>
 <body>
     <div id="page-container">
@@ -51,14 +52,21 @@
 
                     <div class="form-holder">
                         <label for="user-pswd">Create Password</label>
-                        <input type="text" id="user-pswd" name="user-pswd" required>
+                        <input type="password" id="user-pswd" name="user-pswd" required>
                     </div>
 
                     <div class="form-holder">
                         <label for="pswd-confirm">Confirm Password</label>
-                        <input type="text" id="pswd-confirm" name="pswd-confirm" required>
+                        <input type="password" id="pswd-confirm" name="pswd-confirm" required>
                     </div>
                 </form>
+                <div class="message">
+                    <p>Password must contain an uppercase letter, a lowercase letter, a number, and be at least 10 characters. </p>
+                </div>
+                <div class="pswd-togglebox">
+                    <input type="checkbox" id="pswd-toggle" name="pswd-toggle" onclick="togglePassword()">
+                    <label for="pswd-toggle">Show Password</label>
+                </div>
             </div>
             <div class="content-end">
                 <p>content</p>
