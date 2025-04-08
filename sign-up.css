@@ -85,15 +85,15 @@ img {
 }
 
 .right-page-content {
+    font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     width: 61vw;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .content-header {
-    font-family: Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
     color: black;
@@ -105,31 +105,55 @@ img {
     font-weight: bold;
 }
 
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .content-middle {
-    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    color: black;
     padding: 3rem;
     width: 100%;
-    font-size: 1.5rem;
     background-color: white;
     box-shadow: 10px 5px 5px rgba(69, 69, 69, 0.5);
+    z-index: 1;
+}
+
+.content-middle > p {
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.input-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .content-end {
     display: flex;
     flex-direction: column;
-    font-family: Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
     color: black;
     background-color: #f5f5f5;
-    padding: 2rem;
+    padding: 3rem;
+    padding-bottom: 5.5rem;
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
-    z-index: -1;
 }
 
 .content-end a {
@@ -139,15 +163,11 @@ img {
     cursor: pointer;
 }
 
-.content-end label {
-    margin-top: 10px;
+.content-end a:hover {
+    color: #4a72eb;
 }
 
-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+.content-end p {
     margin-top: 10px;
 }
 
@@ -163,7 +183,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     border: 1px solid #5b5b5b;
     border-radius: 5px;
     width: 350px;
-    height: 40px;
+    height: 45px;
     padding-left: 10px;
 } 
 
@@ -184,11 +204,9 @@ label {
     color: #5b5b5b;
 }
 
-::placeholder {
-    font-size: 70%;
-}
-
 .message {
+    display: flex;
+    flex-direction: column;
     font-size: 0.9rem;
     color: #5b5b5b;
 }
@@ -215,5 +233,6 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: #4a72eb;
 }
 
