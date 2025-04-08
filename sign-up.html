@@ -47,17 +47,17 @@
 
                     <div class="form-holder">
                         <label for="phone">Phone Number (optional)</label>
-                        <input type="tel" id="phone" name="phone" maxlength="12" placeholder="123-456-7890" pattern="/^\d{3}(\-)?\d{3}(\-)?\d{4}$/g">
+                        <input type="tel" id="phone" name="phone" maxlength="12" placeholder="123-456-7890" pattern="/^\d{3}(\-)?\d{3}(\-)?\d{4}$/">
                     </div>
 
                     <div class="form-holder">
                         <label for="user-pswd">Create Password</label>
-                        <input type="password" id="user-pswd" name="user-pswd" required>
+                        <input type="password" id="user-pswd" name="user-pswd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}$" required>
                     </div>
 
                     <div class="form-holder">
                         <label for="pswd-confirm">Confirm Password</label>
-                        <input type="password" id="pswd-confirm" name="pswd-confirm" required>
+                        <input type="password" id="pswd-confirm" name="pswd-confirm" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10,}$" required>
                     </div>
                 </form>
                 <div class="message">

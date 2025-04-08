@@ -157,6 +157,10 @@ input[value=""], input:invalid {
     border: 1px solid red;
 }
 
+input:valid {
+    border: 1px solid green;
+}
+
 label {
     font-size: 0.9rem;
     color: #5b5b5b;
